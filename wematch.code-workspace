@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "D:\\wematch1-master"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "wematch",
+		"liveServer.settings.CustomBrowser": "chrome"
+	}
+}

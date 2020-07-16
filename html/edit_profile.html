@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>edit profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="..//css/edit-profile.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pridi" rel="stylesheet">
+    </head>
+        <body id="body"> 
+        <div class = "grid-container">    
+            <div class ="grid-item" id="upload-pic">               
+                    <form class="image-upload" id="img-upload" action="../php/up_pic.php" method="post" enctype="multipart/form-data">
+                        <img src="../pic/human.jpg" id="human">   
+                            <label for="file-input">
+                              <img id="plus" src="../pic/plus.png"/>
+                            </label>
+                            <input id="file-input" type="file" />
+                    </form>
+            </div>
+                <form action="" class ="grid-item" id="edit-form">
+                    <input type="text" name="username" class="input"  placeholder="username" required>
+                    <br>
+                    <select name="gender" class="input"  required >
+                        <option disabled selected>gender</option>
+                        <option value="male" >male</option>
+                        <option value="famle">famle</option>
+                    </select>
+                    <br>
+                    <select name="interst in" class="input"  required>
+                            <option disabled selected>interst in</option>
+                            <option value="male" >male</option>
+                            <option value="famle">famle</option>
+                    </select>
+                    <br>
+                    <select name="location" class="input" required>
+                            <option disabled selected>location</option>
+                            <option value="saraburi" >saraburi</option>
+                            <option value="bangkok">bangkok</option>
+                    </select>
+                    <br>
+                    <input type="date" name="age" class="input" required min="1919-01-01"  >
+                    <br>
+                    <br>
+                </form>
+            
+            <div class ="grid-item" id="button-select">
+                            <button type="button" class="button" id="button-back" >BACK</button>
+                            <button type="button"  class="button"id="button-go">GO</button>           
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

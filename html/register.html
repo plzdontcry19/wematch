@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/register.css">
+    <script src="main.js"></script>
+</head>
+    <body class = "body">
+      
+        <div class="grid-container">
+            <div class = "grid-logo">
+                <img src="../pic/logo.png" id = "logo">
+                <br>
+            </div>
+            <form class = "grid-input" action="../php/insert.php" method="post">
+				<input type="text" name="email_ac" class="input" placeholder="E-mail" required>
+				<br>
+				
+				<input type="tel" name="tel_ac" class="input" placeholder="Telephone" pattern = "[0-9]{10}" maxlength="10" required>
+                <br>
+               
+                <input type="password" name="pass_ac" class="input" placeholder="Password" required>
+                <br>
+               
+                <input type="password" name="pass_ch" class="input" placeholder="Re-Password" required>
+                <br>
+
+                <div class = "grid-register">
+                    
+                        <button type="button" class="button" id = "button-back" >BACK</button>
+                   
+                       <button type="submit" class="button" id = "button-regis"><span id="regis-in">REGISTER</span></button>
+                   
+                </div>
+
+            </form>
+            
+        </div>
+    </body>
+</html>

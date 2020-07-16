@@ -1,0 +1,158 @@
+.body {
+    background-image: url(../pic/bg2.png);
+    background-size: 100%;
+
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto 50% auto;
+    grid-template-rows: auto auto auto;
+    grid-gap:1.250em;
+}
+
+.grid-logo {
+    grid-area:  1/2/span 1/span 1;
+    margin-top: 40px;
+    text-align: center;  
+}
+
+.grid-input {
+    grid-area:  2/2/span 1/span 1; 
+    text-align: center;
+}
+
+.grid-register{
+    grid-area:  3/2/span 1/span 1;  
+    text-align: center;
+    margin-top : 20px;
+}
+
+.button{
+    background-color: white; /* Green */
+    border: none;
+    color: #663398;
+    /* padding: 2% 15% 2% 15%; */
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.875em;
+    border-radius: 3.125em;
+    border: 0.125em solid #d9d9d9;
+    /* width: 30%; */
+}
+
+#logo{
+    width: 50%;
+}
+
+/* 
+img {
+    text-align: center;
+    width: 30%;
+} */
+
+
+.input{
+    width: 50%;
+    padding: 15px 30px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#button-back{
+    margin-top: 5%;
+    padding: 2% 12% 2% 12%;
+}
+#button-regis{
+    margin-left: 2.5%;
+   padding: 2% 15% 2% 15%;
+   width: 40%;
+    text-align: center;
+
+}
+#regis-in{
+    margin-left: -80%;
+}
+
+@media only screen and (max-width: 768px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto;
+        grid-gap:1.250em;
+    }
+
+    .body{
+        background-image: url(../pic/bgipad-regis.png);
+        background-size: 100%;
+    }
+
+    .grid-logo {
+        grid-area:  1/1/span 1/span 2;
+        margin-top: 5%;
+        text-align: center;  
+    }
+    .grid-input {
+        grid-area:  2/1/span 1/span 2; 
+        text-align: center;
+    }
+    
+    .grid-register{
+        grid-area:  3/1/span 1/span 2;  
+        text-align: center;
+        margin-top : 20px;
+    }
+    
+
+
+
+}
+
+@media only screen and (max-width: 500px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows: auto auto auto auto;
+        grid-gap:1.250em;
+    }
+
+    .body{
+        
+        background-image: url(../pic/bgphone-regis.png);
+        background-size: 100%;
+    }
+
+    .grid-logo {
+        grid-area:  1 / 1;
+        margin-top: 5%;
+        text-align: center;  
+    }
+    .grid-input {
+        grid-area:  2 / 1; 
+        text-align: center;
+    }
+    
+    .grid-register{
+        grid-area:  3 / 1;  
+        text-align: center;
+        margin-top : 20px;
+    }
+
+    #button-back{
+        margin-top: 5%;
+        padding: 2% 12% 2% 12%;
+    }
+    #button-regis{
+        margin-left: 5%;
+       padding: 2% 15% 2% 15%;
+    
+    }
+    
+    .button {
+        font-size: 1.45em;
+    }
+   
+}

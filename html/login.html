@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/login.css">
+    <script type="text/javascript" src="../js/loginJS.js"></script>
+    <!-- <script src="main.js"></script> -->
+</head>
+    <body>
+        <form name="form" method="post" action="../php/check_log.php" class = "grid-contrainer">
+                <div class = "grid-login">
+                        <img src="../pic/logo.png" id = "logo">
+                        <br>
+                
+                <div class ="grid-input">
+                        <input name="username" type="text" class="input" placeholder="E-mail or Telephone" required>
+                        <br>
+                        
+                        <input name="password" type="password" class="input" placeholder="Password" required>
+                        <br>
+                        <br>
+                        <br>
+                </div>
+                <div class = "grid-login" id="button">
+
+                        <button type="button" class="button" id="button-back"onclick="alert('BACK!')">BACK</button>
+                        <button type="submit" name="login" class="button" id="button-login" value="login">LOGIN</button>
+                        <br>
+                        <br>
+                        <span id="errordisplay"></span><br>
+                </div>
+                </div>
+        </form>
+  </body>
+</html>

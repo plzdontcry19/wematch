@@ -1,0 +1,44 @@
+<?php
+    session_start();
+    if(isset($_SESSION['username'])){
+        $username = $_SESSION['username'];
+    }else{
+        header('Location:../html/login.html');
+        exit;
+    }
+    if(isset($_SESSION['img'])){
+        $imgfile = $_SESSION['img'];
+    }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>edit status</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="../css/status.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pridi" rel="stylesheet">
+
+    </head>
+        <body id="body"> 
+        <div class = "grid-container">    
+            <div class ="grid-item" id="upload-pic">
+                     <img src= <?php echo "../pic/pic_user/".$imgfile ?> id="human" >                       
+            </div>
+        <div class ="grid-item" id="edit-form">
+                <form action="" >
+                    <p>How are you today "" ?</p>
+                    <input type="text" name="username" class="input"  placeholder="Your Status" maxlength="20">
+                </form>
+                    <br>
+                </div>
+                </form>            
+            <div class ="grid-item" id="button-select">
+                            <button type="button" class="button" id="button-back" >BACK</button>
+                            <button type="button"  class="button"id="button-go">GO</button>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

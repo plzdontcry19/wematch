@@ -1,0 +1,600 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% auto  auto;
+    grid-template-rows: auto auto auto;
+    margin :-0.5% auto auto -0.5%; 
+  }
+.grid-item {
+    border: 0.063em;
+    font-family: 'Open Sans','Pridi', sans-serif;
+    font-weight: bold;
+     
+ }
+#my-profile{
+    grid-area:  1/1/span 1/span 1;
+    /* background-image: url(../pic/bg_myprofile_chatbox.png); */
+    background: #663694; 
+    background: -webkit-linear-gradient(to right, #663694, #46addb); 
+    background: linear-gradient(to right, #663694, #46addb);
+    padding-top: 5%;
+    padding-bottom: 6%;
+    background-size: 150%;
+    border: solid #ccc;
+    border-width: 0em 0.125em  0.125em  0em;
+}
+#discover{
+    grid-area:  2/1/span 1/span 1;
+    background-color : white;
+    padding-top: 5%;
+    padding-bottom: 6%;
+    border:  solid #ccc;
+    border-width: 0em 0.125em  0.125em  0em;
+}
+
+#select-chat{
+    padding-top: 3%;
+    grid-area:  3/1/span 1/span 1;
+    background-color: white;
+    height: 30.7em;
+    overflow: hidden;
+    overflow-y:scroll;
+    padding-bottom: 3%;
+    border: solid #d9d9d9;
+    border-width: 0em 0.125em 0em 0em;
+   
+}
+#select-chat::-webkit-scrollbar {
+    width:0.188em;
+  }
+#select-chat::-webkit-scrollbar-track {
+    background:white;
+  }
+   
+  /* Handle */
+#select-chat::-webkit-scrollbar-thumb {
+    background:#663398;
+  }
+  
+  /* Handle on hover */
+#select-chat::-webkit-scrollbar-thumb:hover {
+    background: #663398;
+  }
+  
+.chat{
+    background-color:white;
+    padding-top: 2%;
+    font-family: 'Open Sans','Pridi', sans-serif;
+    font-size: 1.000em;    
+}
+#swip-chat{
+    grid-area:  1/2/span 3/span 2  ;
+    text-align: center;
+    background-color: #f5f8fd;
+}
+.profile-pic{
+    width: 13%;
+    border-radius: 50%;
+    
+    margin:-2% auto -5% 2%;
+}
+.profile-text{
+    padding-left: 2%;
+}
+#myprofile-text{
+ color: white;
+}
+#discover-text{
+    color:#663398;
+}
+.text-chat{
+    display: inline-block;
+    font-weight: bold;
+    white-space: nowrap; 
+    width: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+.text-name{
+  display: inline-block;
+  font-weight: bold;
+  margin-top:-20%;
+  
+}
+.text-chat{
+  display: block;
+  font-weight: bold;
+  white-space: nowrap; 
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 18%;
+}
+#logo{
+    width: 10%;
+}
+#pic-match{
+    width: 55%;
+    margin-top: 10%;
+    border-radius: 50%;
+    margin-bottom: 3%;
+}
+#logo-box{
+    margin-bottom: 3%;
+}
+.chat-swip{
+    background-color:white; /* Green */
+    border: none;
+    color: #663398;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.875em;
+    border-radius: 1.875em;
+    border: 0.125em solid #d9d9d9;
+    width: 40%;
+    padding-bottom: 2%;
+}
+.chat-swip-match{
+  background: #663694; 
+  background: -webkit-linear-gradient(to right, #663694, #46addb); 
+  background: linear-gradient(to right, #663694, #46addb);
+  background-size: inherit;
+  background-position: center;
+  border: none;
+  color: #663398;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.875em;
+  border-radius: 1.875em;
+  border: 0.125em solid #d9d9d9;
+  width: 40%;
+  padding-bottom: 2%;
+}
+.text-match{
+    margin: 0% auto 0% auto;
+
+}
+#status{
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap;
+    width: 100px;
+    overflow: hidden; */
+    word-wrap: break-word;
+    width: 80%;
+    font-weight: 500;
+    line-height: 1em;
+    font-size: 18px;
+    margin-top: 2%;
+    text-align: inherit;
+    
+}
+#button{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#663398;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #663398;
+  }
+  #not-like{
+    background-image: url( '../pic/cross.png' );
+    background-size: 100%;
+    width: 6.250em;
+    height: 6.250em;
+    border-radius: 50%;
+    border: 0.188em solid #d9d9d9;
+  }
+  #like{
+    background-image: url( '../pic/logoheart.png' );
+    background-size: 100%;
+    width: 6.250em;
+    height:6.250em;
+    border-radius: 50%;
+    border: 0.188em solid #d9d9d9;
+  }
+    #send-ms{
+    display: block;
+    background-color: white; /* Green */
+    border: none;
+    color: #663398;
+    padding: 2.5% 15% 2.5% 15%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.625em;
+    border-radius: 50px;
+    font-weight: bold;
+    -webkit-box-shadow: 0 10px 40px -2px black;
+	   -moz-box-shadow: 0 10px 40px -2px black;
+          box-shadow: 0 10px 40px -2px black;
+    margin: auto auto 5% auto;
+  }
+  #keep-swip{
+    display: block;
+    background-color: white; /* Green */
+    border: none;
+    color: #663398;
+    padding: 2.5% 15% 2.5% 15%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.625em;
+    border-radius: 50px;
+    font-weight: bold;
+    -webkit-box-shadow: 0 10px 40px -2px black;
+	   -moz-box-shadow: 0 10px 40px -2px black;
+          box-shadow: 0 10px 40px -2px black;
+          margin: auto;
+  }
+ @media only screen and (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 35% auto;
+    grid-template-rows: auto auto auto;
+    margin :-0.5% auto auto -0.5%; 
+  }
+.grid-item {
+    border: 0.063em;
+    font-family: 'Open Sans','Pridi', sans-serif;
+    font-weight: bold;
+ }
+ #my-profile{
+  grid-area:  1/1/span 1/span 1;
+  /* background-image: url(../pic/bg_myprofile_chatbox.png); */
+  background: #663694; 
+  background: -webkit-linear-gradient(to right, #663694, #46addb); 
+  background: linear-gradient(to right, #663694, #46addb);
+  padding-top: 5%;
+  padding-bottom: 6%;
+  background-size: 150%;
+  border: solid #ccc;
+  border-width: 0em 0.125em  0.125em  0em;
+}
+#discover{
+  grid-area:  2/1/span 1/span 1;
+  background-color : white;
+  padding-top: 5%;
+  padding-bottom: 6%;
+  border:  solid #ccc;
+  border-width: 0em 0.125em  0.125em  0em;
+}
+
+#select-chat{
+  padding-top: 3%;
+  grid-area:  3/1/span 1/span 1;
+  background-color: white;
+  height: 30.7em;
+  overflow: hidden;
+  overflow-y:scroll;
+  padding-bottom: 3%;
+  border: solid #d9d9d9;
+  border-width: 0em 0.125em 0em 0em;
+ 
+}
+#select-chat::-webkit-scrollbar {
+  width:0.188em;
+}
+#select-chat::-webkit-scrollbar-track {
+  background:white;
+}
+ 
+/* Handle */
+#select-chat::-webkit-scrollbar-thumb {
+  background:#663398;
+}
+
+/* Handle on hover */
+#select-chat::-webkit-scrollbar-thumb:hover {
+  background: #663398;
+}
+
+.chat{
+  background-color:white;
+  padding-top: 2%;
+  font-family: 'Open Sans','Pridi', sans-serif;
+  font-size: 1.000em;
+  
+}
+#swip-chat{
+  grid-area:  1/2/span 3/span 1  ;
+  text-align: center;
+  background-color: #f5f8fd;
+}
+.profile-pic{
+  width: 13%;
+  border-radius: 50%;
+  
+  margin:-2% auto -5% 2%;
+}
+.profile-text{
+  padding-left: 2%;
+}
+#myprofile-text{
+color: white;
+}
+#discover-text{
+  color:#663398;
+}
+.chat-text{
+  font-weight: bold;
+}
+#logo{
+  width: 10%;
+}
+#pic-match{
+  width: 55%;
+  margin-top: 10%;
+  border-radius: 50%;
+  margin-bottom: 3%;
+}
+#logo-box{
+  margin-bottom: 3%;
+}
+.chat-swip{
+  background-color:white; /* Green */
+  border: none;
+  color: #663398;
+  text-decoration: none;
+  display: inline-block;
+  /* font-size: 1.250em; */
+  border-radius: 1.875em;
+  border: 0.125em solid #d9d9d9;
+  width: 70%;
+  padding-bottom: 2%;
+}
+.text-match{
+  margin: 0% auto 0% auto;
+}
+#status{
+  /* text-overflow: ellipsis; */
+    /* white-space: nowrap;
+    width: 100px;
+    overflow: hidden; */
+    word-wrap: break-word;
+    width: 80%;
+    font-weight: 500;
+    line-height: 1em;
+    font-size: 18px;
+    margin-top: 2%;
+    text-align: inherit;
+  
+}
+#button{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#663398;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #663398;
+}
+#not-like{
+  background-image: url( '../pic/cross.png' );
+  background-size: 100%;
+  width: 6.250em;
+  height: 6.250em;
+  border-radius: 50%;
+  border: 0.188em solid #d9d9d9;
+}
+#like{
+  background-image: url( '../pic/logoheart.png' );
+  background-size: 100%;
+  width: 6.250em;
+  height:6.250em;
+  border-radius: 50%;
+  border: 0.188em solid #d9d9d9;
+}
+
+
+
+ }
+
+
+ @media only screen and (max-width: 500px) {
+  body{
+    overflow: hidden;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    margin :-0.5% auto auto -0.5%; 
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+.grid-item {
+    border: 0.063em;
+    font-family: 'Open Sans','Pridi', sans-serif;
+    font-weight: bold;
+    scroll-snap-align: center;
+    align-items: center;
+    
+ }
+ #my-profile{
+  grid-area:  1/1/span 1/span 1;
+  /* background-image: url(../pic/bg_myprofile_chatbox.png); */
+  background: #663694; 
+  background: -webkit-linear-gradient(to right, #663694, #46addb); 
+  background: linear-gradient(to right, #663694, #46addb);
+  /* padding-top: 5%;
+  padding-bottom: 6%; */
+  background-size: 150%;
+  border: solid #ccc;
+  border-width: 0em 0.125em  0.125em  0em;
+}
+#discover{
+  grid-area:  2/1/span 1/span 1;
+  background-color : white;
+  /* padding-top: 5%;
+  padding-bottom: 6%; */
+  border:  solid #ccc;
+  border-width: 0em 0.125em  0.125em  0em;
+}
+
+#select-chat{
+  grid-area:  3/1/span 1/span 1;
+  background-color: white;
+  height: 30.7em;
+  overflow: hidden;
+  overflow-y:scroll;
+  /* padding-bottom: 3%; */
+  border: solid #d9d9d9;
+  border-width: 0em 0.125em 0em 0em;
+ 
+}
+#select-chat::-webkit-scrollbar {
+  width:0.188em;
+}
+#select-chat::-webkit-scrollbar-track {
+  background:white;
+}
+ 
+/* Handle */
+#select-chat::-webkit-scrollbar-thumb {
+  background:#663398;
+}
+
+/* Handle on hover */
+#select-chat::-webkit-scrollbar-thumb:hover {
+  background: #663398;
+}
+
+.chat{
+  background-color:white;
+  padding-top: 2%;
+  font-family: 'Open Sans','Pridi', sans-serif;
+  font-size: 1.000em;
+  
+}
+#swip-chat{
+  grid-area:  4/1/span 3/span 1  ;
+  /* text-align: center; */
+  background-color: #f5f8fd;
+  padding-bottom: 20%;
+  justify-content:initial;
+}
+.profile-pic{
+  width: 13%;
+  border-radius: 50%;
+  margin:-2% auto -5% 2%;
+}
+.profile-text{
+  padding-left: 2%;
+}
+#myprofile-text{
+color: white;
+}
+#discover-text{
+  color:#663398;
+}
+.chat-text{
+  font-weight: bold;
+}
+#logo{
+  width: 10%;
+}
+#pic-match{
+  width: 55%;
+  margin-top: 10%;
+  border-radius: 50%;
+  margin-bottom: 3%;
+}
+#logo-box{
+  margin-bottom: 3%;
+}
+.chat-swip{
+  background-color:white; /* Green */
+  border: none;
+  color: #663398;
+  text-decoration: none;
+  display: inline-block;
+  /* font-size: 1.250em; */
+  border-radius: 1.875em;
+  border: 0.125em solid #d9d9d9;
+  width: 70%;
+  padding-bottom: 2%;
+}
+.text-match{
+  margin: 0% auto 0% auto;
+}
+#status{
+  /* text-overflow: ellipsis; */
+    /* white-space: nowrap;
+    width: 100px;
+    overflow: hidden; */
+    word-wrap: break-word;
+    width: 80%;
+    font-weight: 500;
+    line-height: 1em;
+    font-size: 18px;
+    margin-top: 2%;
+    text-align: inherit;
+  
+}
+#button{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#663398;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #663398;
+}
+#not-like{
+  background-image: url( '../pic/cross.png' );
+  background-size: 100%;
+  width: 6.250em;
+  height: 6.250em;
+  border-radius: 50%;
+  border: 0.188em solid #d9d9d9;
+}
+#like{
+  background-image: url( '../pic/logoheart.png' );
+  background-size: 100%;
+  width: 6.250em;
+  height:6.250em;
+  border-radius: 50%;
+  border: 0.188em solid #d9d9d9;
+}
+
+}

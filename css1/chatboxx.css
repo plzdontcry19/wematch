@@ -1,0 +1,526 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 50% auto;
+    grid-template-rows: auto auto auto;
+    margin :-0.5% auto auto -0.5%; 
+  }
+.grid-item {
+    border: 0.063em;
+    font-family: 'Open Sans','Pridi', sans-serif;
+    font-weight: bold;
+     
+ }
+
+ .msgln { margin:0 0 2px 0; }
+
+ 
+#my-profile{
+    grid-area:  1/1/span 1/span 1;
+    /* background-image: url(../pic/bg_myprofile_chatbox.png); */
+    background: #663694; 
+    background: -webkit-linear-gradient(to right, #663694, #46addb); 
+    background: linear-gradient(to right, #663694, #46addb);
+    padding-top: 5%;
+    padding-bottom: 6%;
+    background-size: 150%;
+    border: solid #ccc;
+    border-width: 0em 0.125em  0.125em  0em;
+}
+#discover{
+    grid-area:  2/1/span 1/span 1;
+    background-color : white;
+    padding-top: 5%;
+    padding-bottom: 6%;
+    border:  solid #ccc;
+    border-width: 0em 0.125em  0.125em  0em;
+}
+
+#select-chat{
+    padding-top: 3%;
+    grid-area:  3/1/span 1/span 1;
+    background-color: white;
+    height: 30.7em;
+    overflow: hidden;
+    overflow-y:scroll;
+    padding-bottom: 3%;
+    border: solid #d9d9d9;
+    border-width: 0em 0.125em 0em 0em;
+   
+}
+#select-chat::-webkit-scrollbar {
+    width:0.188em;
+  }
+#select-chat::-webkit-scrollbar-track {
+    background:white;
+  }
+   
+  /* Handle */
+#select-chat::-webkit-scrollbar-thumb {
+    background:#663398;
+  }
+  
+  /* Handle on hover */
+#select-chat::-webkit-scrollbar-thumb:hover {
+    background: #663398;
+  }
+  
+.chat{
+    background-color:white;
+    padding-top: 2%;
+    font-family: 'Open Sans','Pridi', sans-serif;
+    font-size: 1.000em;
+}
+#swip-chat{
+    grid-area:  1/3/ span 3/span 1  ;
+    text-align: center;
+    background-color: #f5f8fd;
+    border: 0.125em solid white;
+}
+.profile-pic{
+    width: 13%;
+    border-radius: 50%;
+    
+    margin:-2% auto -5% 2%;
+}
+.profile-text{
+    padding-left: 2%;
+}
+#myprofile-text{
+ color: white;
+}
+#discover-text{
+    color:#663398;
+}
+#chat-text{
+    font-weight: bold;
+}
+#logo{
+    width: 10%;
+}
+
+#grid-chatbox {
+    grid-area:  1/2/ span 3/span 1  ;
+    
+}
+
+#chatboxall {
+    display: grid;
+    background:#F5F8FD;
+    grid-template-rows: auto 590px auto;
+    grid-template-columns: auto;
+}
+
+#chatbox {
+    /* display: grid; */
+    margin:0 auto;
+    background:#F5F8FD;
+    /* border:1px solid #ACD8F0;
+    border: solid white; */
+    /* border-radius: 4px; */
+}
+
+#allchat{
+    /* background : rgb(28, 51, 97); */
+}
+/* .grid-logochat {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+} */
+
+#chatsend{
+    margin:0 auto;
+    width:100%;
+    background-color: white;
+    
+}
+#usermsg {
+    width: 88%;
+    padding: 12px 20px;
+    margin: 5px 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background:white;
+}
+
+
+#submitmsg{
+    width: 9%;
+} 
+
+input {
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+#logochatup {
+    display: inline-block;
+    margin: 0% auto 0% auto;
+    /* text-align: right; */
+    width: 50%;
+   
+}
+
+#not{
+    display: inline-block;
+    margin: 0% auto 0% auto;
+    /* text-align: right; */
+    width:50%;
+    
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    border-radius: 3.125em;
+    background-color: #fff;
+}
+
+.text-chat{
+    display: inline-block;
+    font-weight: bold;
+    white-space: nowrap; 
+    width: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+.text-name{
+  display: inline-block;
+  font-weight: bold;
+  margin-top:-20%;
+  
+}
+.text-chat{
+  display: block;
+  font-weight: bold;
+  white-space: nowrap; 
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 18%;
+}
+
+#pic-match{
+    width: 100%;
+    /* margin-top: 10%; */
+    /* border-radius: 50%; */
+    margin-bottom: 3%;
+}
+#logo-box{
+    margin-bottom: 3%;
+}
+/* 
+.box-profile{
+    background-color:white;
+    border: none;
+    color: #663398;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.875em;
+    border-radius: 1.875em;
+    border: 0.125em solid #d9d9d9;
+    width: 40%;
+    padding-bottom: 2%;
+} */
+
+.text-match{
+    margin: 0% auto 0% auto;
+}
+#status{
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap;
+    width: 100px;
+    overflow: hidden; */
+    word-wrap: break-word;
+    width: 80%;
+    font-weight: 500;
+    line-height: 1em;
+    font-size: 18px;
+    margin-top: 2%;
+    text-align: inherit;
+    
+
+}
+/* #button{
+    padding-bottom: 10%;
+} */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#663398;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #663398;
+  }
+@media only screen and (max-width: 768px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 35% auto;
+        grid-template-rows: 15% auto auto  ;
+        margin :-0.5% auto auto -0.5%; 
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        height: 100vh;
+      }
+
+      #swip-chat{
+        grid-area:  1/2/ 1/2  ;
+        text-align: center;
+        background-color: #f5f8fd;
+        border: 0.125em solid white;
+    }
+
+    #grid-chatbox {
+        grid-area:  2/2/ span /span 1  ;
+        
+    }
+
+    #pic-match{
+        width: 5%;
+        /* margin-top: 10%; */
+        /* border-radius: 50%; */
+        margin-bottom: 3%;
+    }
+
+    #chatboxall {
+        display: grid;
+        background:#F5F8FD;
+        grid-template-rows: auto 480px auto;
+    }
+    #chatsend{
+        margin:0 auto;
+        width:100%;
+        background-color: white;
+        
+    }
+    #usermsg {
+        width: 86%;
+        padding: 12px 20px;
+        margin: 5px 8px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        box-sizing: border-box;
+        background:white;
+    }
+    
+    
+    #submitmsg{
+        width: 9%;
+    } 
+    
+    input {
+        padding: 12px 20px;
+        box-sizing: border-box;
+    }
+     
+    button {
+        width: 200px;
+        height: 40px;
+        border-radius: 3.125em;
+        background-color: #fff;
+    }
+
+    .text-matcha{
+        display : inline-block;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    body{
+        overflow: hidden;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+        margin :-0.5% auto auto -0.5%; 
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        height: 100vh;
+      }
+    .grid-item {
+        border: 0.063em;
+        font-family: 'Open Sans','Pridi', sans-serif;
+        font-weight: bold;
+        scroll-snap-align: center;
+        align-items: center;
+        
+     }
+     #my-profile{
+      grid-area:  1/1/span 1/span 1;
+      /* background-image: url(../pic/bg_myprofile_chatbox.png); */
+      background: #663694; 
+      background: -webkit-linear-gradient(to right, #663694, #46addb); 
+      background: linear-gradient(to right, #663694, #46addb);
+      /* padding-top: 5%;
+      padding-bottom: 6%; */
+      background-size: 150%;
+      border: solid #ccc;
+      border-width: 0em 0.125em  0.125em  0em;
+    }
+    #discover{
+      grid-area:  2/1/span 1/span 1;
+      background-color : white;
+      /* padding-top: 5%;
+      padding-bottom: 6%; */
+      border:  solid #ccc;
+      border-width: 0em 0.125em  0.125em  0em;
+    }
+    
+    #select-chat{
+      grid-area:  3/1/span 1/span 1;
+      background-color: white;
+      height: 30.7em;
+      overflow: hidden;
+      overflow-y:scroll;
+      /* padding-bottom: 3%; */
+      border: solid #d9d9d9;
+      border-width: 0em 0.125em 0em 0em;
+     
+    }
+     
+    .chat{
+      background-color:white;
+      padding-top: 2%;
+      font-family: 'Open Sans','Pridi', sans-serif;
+      font-size: 1.000em;
+      
+    }
+    #swip-chat{
+      grid-area:  7/1/span 3/span 1  ;
+      /* text-align: center; */
+      background-color: #f5f8fd;
+      padding-bottom: 20%;
+      justify-content:initial;
+    }
+    .profile-pic{
+      width: 13%;
+      border-radius: 50%;
+      margin:-2% auto -5% 2%;
+    }
+    .profile-text{
+      padding-left: 2%;
+    }
+    #myprofile-text{
+    color: white;
+    }
+    #discover-text{
+      color:#663398;
+    }
+    .chat-text{
+      font-weight: bold;
+    }
+    #logo{
+      width: 10%;
+    }
+    #pic-match{
+      width: 30%;
+      margin-top: 10%;
+      border-radius: 50%;
+      margin-bottom: 3%;
+    }
+
+    .chat-swip{
+      background-color:white; /* Green */
+      border: none;
+      color: #663398;
+      text-decoration: none;
+      display: inline-block;
+      /* font-size: 1.250em; */
+      border-radius: 1.875em;
+      border: 0.125em solid #d9d9d9;
+      width: 70%;
+      padding-bottom: 2%;
+    }
+    .text-match{
+      margin: 0% auto 0% auto;
+    }
+    #status{
+        word-wrap: break-word;
+        width: 80%;
+        font-weight: 500;
+        line-height: 1em;
+        font-size: 18px;
+        margin-top: 2%;
+        text-align: inherit;
+      
+    }
+
+
+    #grid-chatbox {
+        grid-area:  4/1/ span 3/span 1  ;
+        
+    }
+    
+    #chatboxall {
+        display: grid;
+        background:#F5F8FD;
+        grid-template-rows: auto 590px auto;
+    }
+    
+    #chatbox {
+        display: grid;
+        text-align:left;
+        margin:0 auto;
+        background:#F5F8FD;
+        border:1px solid #ACD8F0;
+        overflow:auto; 
+        border: solid white;
+        border-radius: 4px;
+    }
+    
+    #allchat{
+        background : rgb(28, 51, 97);
+    }
+    
+    #chatsend{
+        margin:0 auto;
+        width:100%;
+        background-color: white;
+        
+    }
+    #usermsg {
+        width: 80%;
+        padding: 12px 20px;
+        margin: 5px 8px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        box-sizing: border-box;
+        background:white;
+    }
+    
+    
+    #submitmsg{
+        width: 12%;
+    } 
+    
+    input {
+        padding: 12px 20px;
+        box-sizing: border-box;
+    }
+     
+    button {
+        width: 200px;
+        height: 40px;
+        border-radius: 3.125em;
+        background-color: #fff;
+    }
+}
