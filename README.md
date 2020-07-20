@@ -1,4 +1,4 @@
-**Wematch** is the online waiting website which used phpMyAdmin to manage database and used Xampp to create a testing server. This project is not completely developed, it has only come to the stage where user match each other.
+**Wematch** is the online dating website which used phpMyAdmin to manage database and used Xampp to create a testing server. This project is not completely developed, it has only come to the stage where user match each other.
 
 > This project was created when I was in the 3rd year of study in university.
 
